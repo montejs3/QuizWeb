@@ -4,7 +4,7 @@ let pos = 0;
 function Post(props) {
     
     let questions = ["Bienvenido al quiz", "Cómo se define un nuevo componente en React ?", "Cómo se define un nuevo estado?", "F o V ... El inicializador del estdo puede ser una función", "Qué es el virtual DOM?"];
-    let answers = ["", "Para definir un nuevo componente en React, se utiliza una función o una clase que extiende React.Component o React.PureComponent", "Un nuevo estado se define en un componente de React utilizando el método setState() o, en componentes de clase, el constructor y la propiedad de estado.", "F (Falso). El inicializador del estado en un componente de clase debe ser un objeto litera", "https://th.bing.com/th/id/OIP.ixVnnqAMGNfwK7u5KMh5qQAAAA?pid=ImgDet&rs=1"];   
+    let answers = ["", "Para definir un nuevo componente en React, se utiliza una función o una clase que extiende React.Component o React.PureComponent", "Para definir un nuevo estado en React, se puede usar el State Hook. El State Hook es una función que te permite agregar estado local a un componente de función const [count, setCount] = useState(0);", "Verdadero, el inicializador del estado puede ser una función. Los Hooks son una nueva incorporación en React 16.8 que te permiten usar estado y otras características de React sin escribir una clase", "https://assets.interviewbit.com/assets/skill_interview_questions/react/real-virtual-dom-ef615afd3c603140a15cc509f6b107db83aeb5d8ac27add7bd416558fa40fdd7.png.gz"];   
     
     const [Text, setInputText] = useState(questions[pos]);
     const [Answer, setAnswer] = useState(answers[pos]);
@@ -61,7 +61,7 @@ function Post(props) {
             <div class="text-center">
                 <h1>{Text}</h1>
                 {pos <= 3 && (<h4>{Answer}</h4>)}
-                {pos === 4 && (<img src={Answer} alt="" />)}
+                {pos === 4 && (<img src={Answer}  style={{ width: '75%', height: '75%' }} alt="El Virtual DOM es una representación visual del DOM. Es una copia que nos permite hacer cálculos pesados sin afectar el rendimiento del verdadero DOM. " />)}
             </div>
         </div>
     </div>
