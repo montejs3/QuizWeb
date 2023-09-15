@@ -1,5 +1,4 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
+
 import reportWebVitals from './reportWebVitals';
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -9,12 +8,7 @@ import Post from "./Post";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <Container className="mt-3">
-   <Row>
-     <Post  />
-     
-   </Row>
- </Container>
+     <Post/>  
 );
 
 // If you want to start measuring performance in your app, pass a function
